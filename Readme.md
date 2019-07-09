@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Дурандин](https://up.htmlacademy.ru/adaptive/17/user/164805).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://htmlacademy.ru/profile/id87167).
 
 ---
 
