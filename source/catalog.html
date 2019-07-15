@@ -6,18 +6,23 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-navigation__logo-link"><img src="#" alt="" class="main-navigation__logo-link"></a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Подбор программы</a>
-        </li>
-      </ul>
+      <nav class="main-navigation">
+        <a href="#" class="main-navigation__logo-link">
+          <img src="#" alt="" class="main-navigation__logo">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="main-navigation__toggle" type="button"></button>
+      </nav>
       <div class="intro">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
@@ -26,7 +31,7 @@
     </header>
     <main>
       <section class="catalog">
-        <h1 class="catalog__title">Каталог продукции</h1>
+        <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item product">
             <img src="#" alt="" class="product__img">
@@ -175,19 +180,19 @@
             </div>
             <a href="#" class="product__link btn">Заказать</a>
           </li>
+          <li class="catalog__item product__download">
+            <a class="product__download-more">
+              <b>Показать еще 100500 товаров</b>
+              <p>На самом деле вкусов гораздо больше!</p>
+            </a>
+            <button class="product__download-all btn">Показать все</button>
+          </li>
         </ul>
-        <div class="product__download">
-          <a class="product__download-more">
-            <b>Показать еще 100500 товаров</b>
-            <p>На самом деле вкусов гораздо больше!</p>
-          </a>
-          <button class="product__download-all btn">Показать все</button>
-        </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-logo">
-        <a href="#" class="footer-logo__link"><img src="#" alt="" class="footer-logo__link"></a>
+        <a href="#" class="footer-logo__link"><img src="#" alt="" class="footer-logo__img"></a>
       </div>
       <div class="footer-social social">
         <ul class="social__list">
