@@ -1,38 +1,140 @@
 .product-download {
-  .container-mobile();
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  @media @mobile-width {
+    .container-mobile();
+    display: flex;
+    flex-direction: column;
+    min-height: 210px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @media @tablet-width {
+    width: 324px;
+    box-sizing: border-box;
+    min-height: 432px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 37px 40px;
+    border: solid 1px rgba(205, 205, 205, 0.5);
+    margin-bottom: 140px;
+  }
+
+  @media @desktop-width {
+    width: 245px;
+    height: 432px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgba(205, 205, 205, 0.5);
+    padding: 55px 38px 40px;
+  }
 }
 
 .product-download__title {
-  display: block;
-  font-family: @main-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: @title-color-font;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  @media @mobile-width {
+    font-family: @main-font;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: @title-color-font;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  @media @tablet-width {
+    font-family: @main-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: @title-color-font;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 111px;
+    margin-bottom: 28px;
+  }
+
+  @media @desktop-width {
+    font-family: @main-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: @title-color-font;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 111px;
+    margin-bottom: 28px;
+  }
 }
 
 .product-download__text {
-  font-family: @second-font;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: @normal-color-font;
+  @media @mobile-width {
+    font-family: @second-font;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: @normal-color-font;
+  }
+
+  @media @tablet-width {
+    width: 170px;
+    font-family: @second-font;
+    font-size: 12px;
+    text-align: center;
+    color: @normal-color-font;
+  }
+
+  @media @desktop-width {
+    width: 170px;
+    font-family: @second-font;
+    font-size: 12px;
+    text-align: center;
+    color: @normal-color-font;
+  }
 }
 
 .product-download__btn {
-  .btn();
-  font-family: @main-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: @normal-color-font;
-  margin-top: 20px;
-  background-color: @background-second-color;
+  @media @mobile-width {
+    .btn();
+    width: 100%;
+    padding: 13px;
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @normal-color-font;
+    background-color: @background-second-color;
+    margin-top: auto;
+  }
+
+  @media @tablet-width {
+    .btn();
+    width: 100%;
+    padding: 13px;
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @normal-color-font;
+    background-color: @background-second-color;
+    margin-top: auto;
+  }
+
+  @media @desktop-width {
+    .btn();
+    width: 100%;
+    padding: 13px;
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @normal-color-font;
+    background-color: @background-second-color;
+    margin-top: auto;
+  }
 }

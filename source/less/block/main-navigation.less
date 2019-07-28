@@ -1,5 +1,17 @@
 .main-navigation {
-  //
+  @media @tablet-width {
+    .container-tablet();
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  @media @desktop-width {
+    .container-desktop();
+    display: flex;
+    justify-content: space-between;
+    padding-top: 53px;
+  }
 }
 
 .main-navigation__logo-link {
@@ -11,30 +23,79 @@
 }
 
 .main-navigation__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @media @mobile-width {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media @tablet-width {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .main-navigation__item {
-  //
+  @media @tablet-width {
+    padding-left: 36px;
+  }
+
+  @media @desktop-width {
+    padding-left: 36px;
+  }
 }
 
 .main-navigation__link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: @main-font;
-  color: @title-color-font;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  @media @mobile-width {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: @main-font;
+    color: @title-color-font;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  @media @tablet-width {
+    font-family: @main-font;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  @media @desktop-width {
+    font-family: @main-font;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
 .main-navigation__toggle {
-  //
+  position: absolute;
+  display: none;
+
+  @media @mobile-width {
+    position: absolute;
+    display: none;
+  }
 }

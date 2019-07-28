@@ -1,58 +1,198 @@
 .course {
-  .container-mobile();
+  @media @mobile-width {
+    .container-mobile();
+  }
+
+  @media @tablet-width {
+    .container-tablet();
+  }
+
+  @media @desktop-width {
+    .container-desktop();
+  }
 }
 
 .course__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @media @mobile-width {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media @tablet-width {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .course__item {
-  background-color: @background-second-color;
-  position: relative;
-  padding: 22px;
-  margin-bottom: 20px;
+  @media @mobile-width {
+    background-color: @background-second-color;
+    position: relative;
+    padding: 22px;
+    margin-bottom: 20px;
+  }
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 372px;
+    background-color: @background-second-color;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 80px 285px 60px 55px;
+  }
+
+  @media @desktop-width {
+    box-sizing: border-box;
+    background-color: @background-second-color;
+    position: relative;
+    margin-bottom: 80px;
+    width: 570px;
+    padding: 47px 50px 60px;
+  }
 }
 
 .course__title {
-  font-family: @main-font;
-  font-size: 24px;
-  line-height: 37px;
-  color: @title-color-font;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-left: 92px;
-  margin-top: 5px;
-  margin-bottom: 12px;
+  @media @mobile-width {
+    font-family: @main-font;
+    font-size: 24px;
+    line-height: 37px;
+    color: @title-color-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 92px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  @media @tablet-width {
+    font-family: @main-font;
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+    font-weight: 400;
+    color: @title-color-font;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  @media @desktop-width {
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+    color: @title-color-font;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    padding-left: 164px;
+  }
 }
 
 .course__img {
-  position: absolute;
-  top: 22px;
-  left: 22px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: @main-color;
+  @media @mobile-width {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @main-color;
+  }
+
+  @media @tablet-width {
+    position: absolute;
+    right: 62px;
+    top: 92px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: @main-color;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+    border-radius: 50%;
+    background-color: @main-color;
+  }
 }
 
 .course__text {
-  font-family: @second-font;
-  font-size: 14px;
-  line-height: 18px;
-  color: @normal-color-font;
-  margin-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  @media @mobile-width {
+    font-family: @second-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: @normal-color-font;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @media @tablet-width {
+    font-family: @second-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: @normal-color-font;
+    margin-bottom: 60px;
+  }
+
+  @media @desktop-width {
+    font-family: @second-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: @normal-color-font;
+    margin-bottom: 35px;
+  }
 }
 
 .course__link {
-  font-family: @main-font;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: @title-color-font;
-  text-decoration: none;
+  @media @mobile-width {
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @title-color-font;
+    text-decoration: none;
+  }
+
+  @media @tablet-width {
+    font-family: @main-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @title-color-font;
+    text-decoration: none;
+  }
+
+  @media @desktop-width {
+    font-family: @main-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @title-color-font;
+    text-decoration: none;
+  }
 }
