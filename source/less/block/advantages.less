@@ -1,7 +1,5 @@
 .advantages {
-  @media @mobile-width {
     padding-bottom: 22px;
-  }
 
   @media @tablet-width {
     //
@@ -13,7 +11,6 @@
 }
 
 .advantages__title {
-  @media @mobile-width {
     .container-mobile();
     font-family: @main-font;
     font-size: 36px;
@@ -22,56 +19,36 @@
     color: @title-color-font;
     margin-top: 0;
     margin-bottom: 35px;
-  }
 
   @media @tablet-width {
     .container-tablet();
-    font-family: @main-font;
     font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    color: @title-color-font;
     margin-bottom: 63px;
   }
 
   @media @desktop-width {
     .container-desktop();
-    font-family: @main-font;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    color: @title-color-font;
-    margin-bottom: 63px;
   }
 }
 
 .advantages__list {
-  @media @mobile-width {
     .container-mobile();
     list-style: none;
-  }
 
   @media @tablet-width {
     .container-tablet();
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    list-style: none;
     counter-reset: number;
   }
 
   @media @desktop-width {
     .container-desktop();
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    counter-reset: number;
   }
 }
 
 .advantages__item {
-  @media @mobile-width {
     position: relative;
     box-sizing: border-box;
     min-height: 60px;
@@ -94,65 +71,19 @@
       height: 60px;
       background-color: @main-color;
     }
-  }
 
   @media @tablet-width {
-    position: relative;
     width: 250px;
-    box-sizing: border-box;
     min-height: 281px;
     padding-top: 148px;
     margin-bottom: 58px;
-    font-family: @second-font;
-    color: @normal-color-font;
     font-size: 16px;
     line-height: 24px;
 
     &::before {
-      position: absolute;
-      content: "";
-      left: 0;
       top: 31px;
       width: 80px;
       height: 80px;
-      background-color: @main-color;
-    }
-
-    &::after {
-      position: absolute;
-      top: -5px;
-      left: 126px;
-      font-family: @main-font;
-      font-size: 281px;
-      line-height: 281px;
-      font-weight: 400;
-      color: @background-second-color;
-      z-index: -1;
-      counter-increment: number;
-      content: counter(number);
-    }
-  }
-
-  @media @desktop-width {
-    position: relative;
-    width: 250px;
-    box-sizing: border-box;
-    min-height: 281px;
-    padding-top: 148px;
-    margin-bottom: 58px;
-    font-family: @second-font;
-    color: @normal-color-font;
-    font-size: 16px;
-    line-height: 24px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 31px;
-      width: 80px;
-      height: 80px;
-      background-color: @main-color;
     }
 
     &::after {

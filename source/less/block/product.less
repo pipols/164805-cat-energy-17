@@ -1,10 +1,8 @@
 .product {
-  @media @mobile-width {
     margin-top: -1px;
     padding-bottom: 25px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
 
   @media @tablet-width {
     box-sizing: border-box;
@@ -17,40 +15,23 @@
   }
 
   @media @desktop-width {
-    box-sizing: border-box;
     width: 245px;
-    min-height: 431px;
-    padding-right: 37px;
-    padding-bottom: 40px;
-    padding-left: 37px;
-    background-color: @background-second-color;
   }
 }
 
 .product__wrap {
-  @media @mobile-width {
     display: flex;
     flex-wrap: wrap;
     .container-mobile();
-  }
 
   @media @tablet-width {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  @media @desktop-width {
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
 }
 
 .product__img-link {
-  @media @mobile-width {
     width: 50%;
-  }
 
   @media @tablet-width {
     //
@@ -62,51 +43,26 @@
 }
 
 .product__img {
-  @media @mobile-width {
-    //
-  }
 
   @media @tablet-width {
-    margin-top: -60px;
-    margin-bottom: 39px;
-  }
-
-  @media @desktop-width {
     margin-top: -60px;
     margin-bottom: 39px;
   }
 }
 
 .product__description-wrap {
-  @media @mobile-width {
     width: 50%;
-  }
 
   @media @tablet-width {
-    width: 100%;
-  }
-
-  @media @desktop-width {
     width: 100%;
   }
 }
 
 .product__title-link {
-  @media @mobile-width {
     text-decoration: none;
-  }
-
-  @media @tablet-width {
-    text-decoration: none;
-  }
-
-  @media @desktop-width {
-    text-decoration: none;
-  }
 }
 
 .product__title {
-  @media @mobile-width {
     font-family: @main-font;
     font-size: 16px;
     font-weight: 400;
@@ -117,46 +73,19 @@
     text-align: left;
     text-transform: uppercase;
     color: @title-color-font;
-  }
 
   @media @tablet-width {
-    font-family: @main-font;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
     width: 130px;
     margin: 0 auto 25px;
     text-align: center;
-    text-transform: uppercase;
-    color: @title-color-font;
-  }
-
-  @media @desktop-width {
-    font-family: @main-font;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    width: 130px;
-    margin: 0 auto 25px;
-    text-align: center;
-    text-transform: uppercase;
-    color: @title-color-font;
   }
 }
 
 .product__feature-table {
-  @media @mobile-width {
     width: 100%;
-  }
 
   @media @tablet-width {
-    width: 100%;
-    margin-bottom: 33px;
-    border-collapse: collapse;
-  }
-
-  @media @desktop-width {
-    width: 100%;
     margin-bottom: 33px;
     border-collapse: collapse;
   }
@@ -166,74 +95,38 @@
   @media @tablet-width {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-
-  @media @desktop-width {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
 }
 
 .product__properties {
-  @media @mobile-width {
     font-family: @second-font;
     font-size: 12px;
     line-height: 16px;
     text-align: left;
     color: @normal-color-font;
-  }
 
   @media @tablet-width {
-    font-family: @second-font;
     font-size: 16px;
-    line-height: 16px;
     padding-top: 9px;
     padding-bottom: 9px;
-    text-align: left;
-    color: @normal-color-font;
-  }
-
-  @media @desktop-width {
-    font-family: @second-font;
-    font-size: 16px;
-    line-height: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    text-align: left;
-    color: @normal-color-font;
   }
 }
 
 .product__value {
-  @media @mobile-width {
     font-family: @second-font;
     font-size: 12px;
     line-height: 16px;
     text-align: right;
     color: @normal-color-font;
-  }
 
   @media @tablet-width {
-    font-family: @second-font;
     font-size: 16px;
     line-height: 16px;
     padding-top: 9px;
     padding-bottom: 9px;
-    text-align: right;
-    color: @normal-color-font;
-  }
-
-  @media @desktop-width {
-    font-family: @second-font;
-    font-size: 16px;
-    line-height: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    text-align: right;
-    color: @normal-color-font;
   }
 }
 
 .product__link {
-  @media @mobile-width {
     font-family: @main-font;
     font-size: 16px;
     line-height: 20px;
@@ -242,29 +135,8 @@
     text-align: center;
     color: rgb(255, 255, 255);
     .btn();
-  }
 
   @media @tablet-width {
-    font-family: @main-font;
-    font-size: 16px;
-    line-height: 20px;
-    width: 100%;
     margin-top: auto;
-    padding: 13px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    .btn();
-  }
-
-  @media @desktop-width {
-    font-family: @main-font;
-    font-size: 16px;
-    line-height: 20px;
-    width: 100%;
-    margin-top: auto;
-    padding: 13px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    .btn();
   }
 }

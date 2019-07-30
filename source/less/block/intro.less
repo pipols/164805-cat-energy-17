@@ -1,9 +1,7 @@
 .intro {
-  @media @mobile-width {
     position: relative;
     margin-bottom: 22px;
     padding-top: 30px;
-  }
 
   @media @tablet-width {
     padding-top: 61px;
@@ -15,7 +13,6 @@
   }
 
   &::before {
-    @media @mobile-width {
       position: absolute;
       content: "";
       top: 0;
@@ -27,7 +24,6 @@
       background-position-x: center;
       background-position-y: top;
       z-index: -1;
-    }
 
     @media @tablet-width {
       display: none;
@@ -36,9 +32,7 @@
 }
 
 .intro__wrap {
-  @media @mobile-width {
     .container-mobile();
-  }
 
   @media @tablet-width {
     .container-tablet();
@@ -55,10 +49,8 @@
 }
 
 .intro__img {
-  @media @mobile-width {
     display: block;
     margin: 30px auto 0;
-  }
 
   @media @tablet-width {
     position: absolute;
@@ -67,7 +59,6 @@
 }
 
 .intro__title {
-  @media @mobile-width {
     font-family: @main-font;
     font-size: 36px;
     line-height: 36px;
@@ -76,33 +67,17 @@
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     margin-top: 0;
-  }
 
   @media @tablet-width {
-    font-family: @main-font;
     font-size: 60px;
     line-height: 60px;
-    font-weight: 400;
     text-align: left;
     color: @title-color-font;
     margin-bottom: 33px;
-    margin-top: 0;
-  }
-
-  @media @desktop-width {
-    font-family: @main-font;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    color: @title-color-font;
-    margin-bottom: 33px;
-    margin-top: 0;
   }
 }
 
 .intro__text {
-  @media @mobile-width {
     font-family: @main-font;
     font-size: 14px;
     line-height: 14px;
@@ -112,10 +87,8 @@
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
 
   @media @tablet-width {
-    font-family: @main-font;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -124,17 +97,11 @@
   }
 
   @media @desktop-width {
-    font-family: @main-font;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-    color: rgb(17, 17, 17);
     margin-bottom: 50px;
   }
 }
 
 .intro__link {
-  @media @mobile-width {
     .btn();
     width: 100%;
     padding: 14px 15px 11px;
@@ -143,25 +110,10 @@
     line-height: 18px;
     text-align: center;
     color: rgb(255, 255, 255);
-  }
 
   @media @tablet-width {
-    .btn();
-    font-family: @main-font;
     font-size: 20px;
     line-height: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 15px 29px 15px 26px;
-  }
-
-  @media @desktop-width {
-    .btn();
-    font-family: @main-font;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
     padding: 15px 29px 15px 26px;
   }
 }
