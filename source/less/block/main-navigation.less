@@ -1,68 +1,93 @@
-.main-navigation {
-  @media @tablet-width {
-    .container-tablet();
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-  }
+.main-navigation
+{
+    @media @tablet-width
+    {
+        display: flex;
+        justify-content: space-between;
 
-  @media @desktop-width {
-    .container-desktop();
-    padding-top: 53px;
-  }
+        padding-top: 24px;
+
+        .container-tablet();
+    }
+
+    @media @desktop-width
+    {
+        padding-top: 53px;
+
+        .container-desktop();
+    }
 }
 
-.main-navigation__logo-link {
-  //
+.main-navigation__logo-link
+{
+    //
 }
 
-.main-navigation__logo {
-  //
+.main-navigation__logo
+{
+    //
 }
 
-.main-navigation__list {
-    list-style: none;
-    padding: 0;
+.main-navigation__list
+{
     margin: 0;
+    padding: 0;
 
-  @media @tablet-width {
-    display: flex;
-  }
+    list-style: none;
+
+    @media @tablet-width
+    {
+        display: flex;
+    }
 }
 
-.main-navigation__item {
-  @media @tablet-width {
-    padding-left: 36px;
-  }
+.main-navigation__item
+{
+    @media @tablet-width
+    {
+        padding-left: 36px;
+    }
 }
 
-.main-navigation__link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.main-navigation__link
+{
     font-family: @main-font;
-    color: @title-color-font;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
+
+    display: block;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
-  @media @tablet-width {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: left;
-    color: rgb(34, 34, 34);
-  }
+    color: @title-color-font;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 
-  @media @desktop-width {
-    font-size: 20px;
-  }
+    @media @tablet-width
+    {
+        font-size: 18px;
+        line-height: 25px;
+
+        text-align: left;
+
+        color: rgb(34, 34, 34);
+        border: none;
+    }
+
+    @media @desktop-width
+    {
+        font-size: 20px;
+    }
 }
 
-.main-navigation__toggle {
-  position: absolute;
-  display: none;
+.main-navigation__toggle
+{
+    position: absolute;
+
+    display: none;
 }

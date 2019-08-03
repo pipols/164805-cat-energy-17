@@ -26,16 +26,101 @@
       </nav>
     </header>
     <main>
+
+      <section class="order">
+        <h1 class="order__main-title">Подбор программы</h1>
+        <form class="order__form" action="">
+          <p class="order__intro">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
+          <div class="order__group-wrap">
+            <fieldset class="order__fieldset order__fieldset--info">
+              <ul class="order__list ">
+                <li class="order__item">
+                  <label class="order__label" for="">Имя:*</label>
+                  <input type="text" placeholder="Барсик">
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="">Вес (кг):*</label>
+                  <input type="text" placeholder="7">
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="">Возраст (лет):</label>
+                  <input type="text" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="order__fieldset order__fieldset--program">
+              <ul class="order__list">
+                <li class="order__item">
+                  <input type="radio">
+                  <label class="order__label" for="">Похудение</label>
+                </li>
+                <li class="order__item">
+                  <input type="radio">
+                  <label class="order__label" for="">Набор массы</label>
+                </li>
+                <li class="order__item">
+                  <input type="radio">
+                  <label class="order__label" for="">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Контактные данные (владельца кота)</legend>
+            <ul class="order__list order__list--contact">
+              <li class="order__item order__item--contact">
+                <label class="order__label" for="">E-mail:*</label>
+                <input type="text" placeholder="kuklachev@gmail.com"></li>
+              <li class="order__item order__item--contact">
+                <label class="order__label" for="">Телефон:*</label>
+                <input type="text" placeholder="8 (960) 900-60-90"></li>
+            </ul>
+          </fieldset>
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Комментарий</legend>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="order__fieldset order__fieldset--additionally">
+            <legend class="order__legend">Дополнительно</legend>
+            <ul class="order__list ">
+              <li class="order__item order__item--checkbox">
+                <input type="checkbox">
+                <label class="order__label" for="">Сахарозаменитель</label>
+              </li>
+              <li class="order__item order__item--checkbox">
+                <input type="checkbox">
+                <label class="order__label" for="">Питьевая вода</label>
+              </li>
+              <li class="order__item order__item--checkbox">
+                <input type="checkbox">
+                <label class="order__label" for="">Молоко</label>
+              </li>
+              <li class="order__item order__item--checkbox">
+                <input type="checkbox">
+                <label class="order__label" for="">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="order__footer">
+            <button class="order__btn" type="submit" name="button">Отправить заявку</button>
+            <p class="order__footnote">* — Обязательные поля</p>
+          </div>
+        </form>
+      </section>
+
       <section class="map">
         <div class="address">
-          <h2 class="address__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-          <div class="address__text-wrap">
-            <p class="address__text">ул. Большая<br>Конюшенная, д. 19/8</p>
-            <p class="address__text">Санкт-Петербург</p>
+          <div class="address__wrap">
+            <h2 class="address__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+            <div class="address__text-wrap">
+              <p class="address__text">ул. Большая<br>Конюшенная, д. 19/8</p>
+              <p class="address__text">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="map__iframe"></div>
       </section>
+
     </main>
     <footer class="main-footer">
       <div class="footer-logo">
