@@ -1,7 +1,7 @@
 .intro {
-    position: relative;
-    margin-bottom: 22px;
-    padding-top: 30px;
+  position: relative;
+  margin-bottom: 22px;
+  padding-top: 30px;
 
   @media @tablet-width {
     padding-top: 61px;
@@ -15,17 +15,17 @@
   }
 
   &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      width: 100%;
-      height: 306px;
-      background-color: rgb(99, 167, 58);
-      background-image: url("../img/index-background-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: top;
-      z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 306px;
+    background-color: rgb(99, 167, 58);
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    z-index: -1;
 
     @media @tablet-width {
       display: none;
@@ -34,7 +34,7 @@
 }
 
 .intro__wrap {
-    .container-mobile();
+  .container-mobile();
 
   @media @tablet-width {
     .container-tablet();
@@ -54,8 +54,8 @@
 }
 
 .intro__img {
-    display: block;
-    margin: 30px auto 0;
+  display: block;
+  margin: 30px auto 0;
 
   @media @tablet-width {
     order: 4;
@@ -63,6 +63,7 @@
     height: 609px;
     margin-top: -80px;
   }
+
   @media @desktop-width {
     position: absolute;
     top: 0;
@@ -74,14 +75,14 @@
 }
 
 .intro__title {
-    font-family: @main-font;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    margin-top: 0;
+  font-family: @main-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  margin-top: 0;
 
   @media @tablet-width {
     font-size: 60px;
@@ -93,15 +94,15 @@
 }
 
 .intro__text {
-    font-family: @main-font;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
   @media @tablet-width {
     font-size: 20px;
@@ -117,14 +118,14 @@
 }
 
 .intro__link {
-    .btn();
-    width: 100%;
-    padding: 14px 15px 11px;
-    font-family: @main-font;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  .btn();
+  width: 100%;
+  padding: 14px 15px 11px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 
   @media @tablet-width {
     width: auto;

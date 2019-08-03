@@ -1,11 +1,13 @@
 .example {
-    background-color: @background-second-color;
-    padding-top: 33px;
+  background-color: @background-second-color;
+  padding-top: 33px;
+
   @media @tablet-width {
     background-color: rgb(255, 255, 255);
     border-top: solid 1px rgb(205, 205, 205);
     padding-top: 50px;
   }
+
   @media @desktop-width {
     margin-top: 190px;
     background-color: @background-second-color;
@@ -27,10 +29,12 @@
 }
 
 .example__wrap {
-    .container-mobile();
+  .container-mobile();
+
   @media @tablet-width {
     .container-tablet();
   }
+
   @media @desktop-width {
     padding: 0;
     margin: 0;
@@ -39,30 +43,33 @@
 }
 
 .example__title {
-    font-family: @main-font;
-    font-size: 36px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    color: @title-color-font;
-    margin-bottom: 33px;
-    margin-top: 0;
+  font-family: @main-font;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-align: left;
+  color: @title-color-font;
+  margin-bottom: 33px;
+  margin-top: 0;
+
   @media @tablet-width {
     font-size: 60px;
     margin-bottom: 60px;
   }
+
   @media @desktop-width {
     margin-bottom: 140px;
   }
 }
 
 .example__text {
-    font-family: @second-font;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: left;
-    color: @normal-color-font;
-    margin-bottom: 27px;
+  font-family: @second-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: @normal-color-font;
+  margin-bottom: 27px;
+
   @media @tablet-width {
     font-size: 16px;
     line-height: 24px;
@@ -74,46 +81,51 @@
   @media @tablet-width {
     display: flex;
   }
+
   @media @desktop-width {
     display: block;
   }
 }
 
 .example__result-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+
   @media @tablet-width {
     margin: 0;
   }
+
   @media @desktop-width {
     margin-bottom: 60px;
   }
 }
 
 .example__result-item {
-    text-align: center;
+  text-align: center;
+
   @media @tablet-width {
     padding-right: 42px;
   }
 }
 
 .example__result-item strong {
-    display: block;
-    box-sizing: border-box;
-    width: 124px;
-    min-height: 56px;
-    font-family: @main-font;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: center;
-    color: @title-color-font;
-    border-radius: 3px;
-    border: solid 1px rgb(205, 205, 205);
-    padding: 15px;
+  display: block;
+  box-sizing: border-box;
+  width: 124px;
+  min-height: 56px;
+  font-family: @main-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: @title-color-font;
+  border-radius: 3px;
+  border: solid 1px rgb(205, 205, 205);
+  padding: 15px;
+
   @media @tablet-width {
     width: 162px;
     min-height: 72px;
@@ -123,36 +135,40 @@
 }
 
 .example__result-item span {
-    display: inline-block;
-    font-family: @second-font;
-    font-size: 12px;
-    line-height: 12px;
-    color: @normal-color-font;
-    margin-top: -10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: @background-second-color;
+  display: inline-block;
+  font-family: @second-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: @normal-color-font;
+  margin-top: -10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: @background-second-color;
+
   @media @tablet-width {
     font-size: 14px;
     line-height: 14px;
     padding-left: 8px;
     padding-right: 8px;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
   }
+
   @media @desktop-width {
     background-color: @background-second-color;
   }
 }
 
 .example__cost {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+
   @media @tablet-width {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-left: auto;
   }
+
   @media @desktop-width {
     flex-direction: row;
     align-items: center;
@@ -160,25 +176,28 @@
 }
 
 .example__cost-text {
-    font-family: @main-font;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: @title-color-font;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @title-color-font;
+
   @media @tablet-width {
     font-size: 20px;
   }
+
   @media @desktop-width {
     padding-right: 115px;
   }
 }
 
 .example__cost-sum {
-    font-family: @main-font;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: @title-color-font;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @title-color-font;
+
   @media @tablet-width {
     font-size: 20px;
   }
