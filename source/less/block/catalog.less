@@ -1,9 +1,11 @@
 .catalog {
   @media @tablet-width {
+    .container-tablet();
     margin-bottom: 58px;
   }
 
   @media @desktop-width {
+    .container-desktop();
     margin-bottom: 0;
   }
 }
@@ -20,14 +22,15 @@
   padding-bottom: 35px;
 
   @media @tablet-width {
-    .container-tablet();
+    width: auto;
     font-size: 60px;
     padding-top: 65px;
     padding-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media @desktop-width {
-    .container-desktop();
     margin: 0;
     padding-bottom: 75px;
     padding-top: 80px;
@@ -40,20 +43,24 @@
   margin: 0;
 
   @media @tablet-width {
-    .container-tablet();
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -60px;
   }
 
   @media @desktop-width {
-    .container-desktop();
-    align-items: flex-end;
+    margin-left: -80px;
   }
 }
 
 .catalog__item {
+  @media @tablet-width {
+    margin-left: 60px;
+  }
+
   @media @desktop-width {
+    margin-left: 80px;
     margin-bottom: 60px;
   }
 }
