@@ -5,6 +5,9 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media @tablet-width {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     box-sizing: border-box;
     width: 324px;
     min-height: 431px;
@@ -18,7 +21,6 @@
 
   @media @desktop-width {
     width: 245px;
-    min-height: auto;
     margin-top: 80px;
   }
 }
@@ -41,7 +43,7 @@
   width: 50%;
 
   @media @tablet-width {
-    //
+    width: auto;
   }
 
   @media @desktop-width {
@@ -53,7 +55,6 @@
 .product__img {
   @media @tablet-width {
     margin-top: -60px;
-    margin-bottom: 39px;
   }
 }
 
