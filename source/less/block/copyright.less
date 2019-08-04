@@ -1,5 +1,16 @@
 .copyright {
-  //
+  .container-mobile();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  @media @tablet-width {
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .copyright__link {
@@ -8,6 +19,11 @@
   line-height: 16px;
   text-align: left;
   color: @normal-color-font;
+  text-decoration: none;
+
+  @media @tablet-width {
+    padding-left: 23px;
+  }
 }
 
 .copyright__img {
