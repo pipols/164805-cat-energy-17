@@ -45,6 +45,7 @@
 
   @media @desktop-width {
     .container-desktop();
+    justify-content: flex-start;
   }
 }
 
@@ -100,10 +101,11 @@
   }
 
   @media @tablet-width {
-    width: 250px;
+    width: 244px;
     min-height: 281px;
     padding-top: 148px;
     padding-left: 0;
+    margin-right: 80px;
     margin-bottom: 58px;
     font-size: 16px;
     line-height: 24px;
@@ -126,6 +128,12 @@
       z-index: -1;
       counter-increment: number;
       content: counter(number);
+    }
+  }
+
+  @media @desktop-width {
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

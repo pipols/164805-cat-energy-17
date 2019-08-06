@@ -150,7 +150,14 @@
   }
 }
 
+.order__item input[type="radio"],
+.order__item input[type="checkbox"] {
+  display: none;
+}
+
 .order__legend {
+  position: relative;
+  display: flex;
   font-family: @main-font;
   font-size: 24px;
   line-height: 24px;
@@ -159,6 +166,16 @@
   color: @title-color-font;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100vw;
+    height: 3px;
+    //top: 0.5em;
+    background-color: @main-color;
+  }
 
   @media @tablet-width {
     font-size: 36px;
@@ -169,12 +186,14 @@
 }
 
 .order__label {
+  position: relative;
   font-family: @main-font;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
   color: rgb(34, 34, 34);
+  flex-shrink: 0;
 
   @media @tablet-width {
     font-size: 20px;
@@ -182,8 +201,81 @@
   }
 }
 
-.order input[type="text"] {
-  flex-grow: 1;
+.order__label--radio,
+.order__label--checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.order__label--radio::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: solid 1px rgb(205, 205, 205);
+  box-sizing: border-box;
+
+  @media @tablet-width {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+input[type="radio"]:checked + .order__label--radio::after {
+  position: absolute;
+  content: "";
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: @main-color;
+
+  @media @tablet-width {
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.order__label--checkbox::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+  border: solid 1px rgb(205, 205, 205);
+  box-sizing: border-box;
+
+  @media @tablet-width {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+input[type="checkbox"]:checked + .order__label--checkbox::after {
+  position: absolute;
+  content: "";
+  left: 9px;
+  top: 0;
+  width: 10px;
+  height: 20px;
+  border: 2px solid @main-color;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
+
+  @media @tablet-width {
+    left: 15px;
+    top: 5px;
+  }
+}
+
+.order input[type="text"],
+.order input[type="email"],
+.order input[type="tel"] {
+  width: 100%;
   min-height: 45px;
   padding: 15px 40px 15px 15px;
   margin-left: 15px;

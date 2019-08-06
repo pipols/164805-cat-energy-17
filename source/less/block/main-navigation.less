@@ -1,10 +1,10 @@
 .main-navigation {
   @media @tablet-width {
+    .container-tablet();
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    .container-tablet();
   }
 
   @media @desktop-width {
@@ -97,7 +97,10 @@
 
   @media @desktop-width {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+
+    &--white {
+      color: rgb(255, 255, 255);
+    }
   }
 }
 

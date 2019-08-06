@@ -13,7 +13,6 @@
 .course__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 
   @media @desktop-width {
@@ -24,17 +23,14 @@
 
 .course__item {
   position: relative;
-
   margin-bottom: 20px;
   padding: 22px;
-
   background-color: @background-second-color;
 
   @media @tablet-width {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     box-sizing: border-box;
     min-height: 372px;
     margin-bottom: 30px;
@@ -53,19 +49,15 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-
   margin-top: 5px;
   margin-bottom: 12px;
   padding-left: 92px;
-
   text-transform: uppercase;
-
   color: @title-color-font;
 
   @media @tablet-width {
     font-size: 36px;
     line-height: 37px;
-
     margin-top: 0;
     margin-bottom: 25px;
     padding-left: 0;
@@ -83,28 +75,93 @@
   position: absolute;
   top: 22px;
   left: 22px;
-
   width: 50px;
   height: 50px;
-
   border-radius: 50%;
   background-color: @main-color;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  &--slim {
+    &::before {
+      left: 8px;
+      top: -3px;
+      width: 35px;
+      height: 49px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-size: 35px 49px;
+    }
+  }
+
+  &--pro {
+    &::before {
+      left: -9px;
+      top: 11px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-size: 67px 28px;
+    }
+  }
 
   @media @tablet-width {
     top: 92px;
     right: 62px;
     left: auto;
-
     width: 200px;
     height: 200px;
+
+    &--slim {
+      &::before {
+        left: 29px;
+        top: -12px;
+        width: 141px;
+        height: 194px;
+        background-size: 141px 194px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        left: -36px;
+        top: 43px;
+        width: 268px;
+        height: 113px;
+        background-size: 268px 113px;
+      }
+    }
   }
 
   @media @desktop-width {
     top: 47px;
     left: 52px;
-
     width: 100px;
     height: 100px;
+
+    &--slim {
+      &::before {
+        left: 13px;
+        top: -6px;
+        width: 71px;
+        height: 97px;
+        background-size: 71px 97px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        left: -18px;
+        top: 21px;
+        width: 134px;
+        height: 57px;
+        background-size: 134px 57px;
+      }
+    }
   }
 }
 
@@ -112,10 +169,8 @@
   font-family: @second-font;
   font-size: 14px;
   line-height: 18px;
-
   margin-top: 24px;
   padding-bottom: 24px;
-
   color: @normal-color-font;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -125,7 +180,6 @@
     margin-top: 0;
     margin-bottom: 60px;
     padding-bottom: 0;
-
     border: none;
   }
 
@@ -135,18 +189,32 @@
 }
 
 .course__link {
+  position: relative;
   font-family: @main-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-
   text-decoration: none;
   text-transform: uppercase;
-
   color: @title-color-font;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: -37px;
+    top: 5px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
 
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-start;
+
+    &::before {
+      right: -49px;
+    }
   }
 }
