@@ -33,6 +33,9 @@
 .slider__img-wrap {
   @media @tablet-width {
     margin-top: -130px;
+    height: 520px;
+    width: 100%;
+    position: relative;
   }
 
   @media @desktop-width {
@@ -45,19 +48,16 @@
   height: 232px;
 
   @media @tablet-width {
-    width: 676px;
-    height: 499px;
-  }
-
-  @media @desktop-width {
-    width: 542px;
+    position: absolute;
+    display: block;
+    width: 690px;
     height: 517px;
   }
 }
 
 .slider__img-before {
   @media @tablet-width {
-    //
+    clip: rect(auto, 352px, auto, 0);
   }
 
   @media @desktop-width {
@@ -66,7 +66,13 @@
 }
 
 .slider__img-after {
-  display: none;
+  @media @tablet-width {
+    clip: rect(auto, auto, auto, 352px);
+  }
+
+  @media @desktop-width {
+    //
+  }
 }
 
 .slider__control {

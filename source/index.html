@@ -123,8 +123,16 @@
           <section class="slider">
             <div class="slider__wrap">
               <div class="slider__img-wrap">
-                <img class="slider__img slider__img-before" src="img/before-mobile@1x.png" width="311" height="232" alt="">
-                <img class="slider__img slider__img-after" src="img/after-mobile@1x.png" width="311" height="232" alt="">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                  <img class="slider__img slider__img-before" src="img/before-mobile@1x.png" width="311" height="232" alt="">
+                </picture>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                  <img class="slider__img slider__img-after" src="img/after-mobile@1x.png" width="311" height="232" alt="">
+                </picture>
               </div>
               <div class="slider__control">
                 <button class="slider__btn" type="button" name="before">Было</button>

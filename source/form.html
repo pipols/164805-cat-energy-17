@@ -62,7 +62,7 @@
           <p class="order__intro">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
           <div class="order__group-wrap">
             <fieldset class="order__fieldset order__fieldset--info">
-              <ul class="order__list ">
+              <ul class="order__list" role="none">
                 <li class="order__item">
                   <label class="order__label" for="">Имя:*</label>
                   <input type="text" placeholder="Барсик">
@@ -78,25 +78,26 @@
               </ul>
             </fieldset>
             <fieldset class="order__fieldset order__fieldset--program">
-              <ul class="order__list">
+              <ul class="order__list"  role="none">
                 <li class="order__item">
-                  <input type="radio" id="slim" name="program" value="slim" checked>
+                  <input class="visuallyhidden" type="radio" id="slim" name="program" value="slim" checked="checked">
                   <label class="order__label order__label--radio" for="slim">Похудение</label>
                 </li>
                 <li class="order__item">
-                  <input type="radio" id="pro" name="program" value="pro">
+                  <input class="visuallyhidden" type="radio" id="pro" name="program" value="pro">
                   <label class="order__label order__label--radio" for="pro">Набор массы</label>
                 </li>
                 <li class="order__item">
-                  <input type="radio" id="question" name="program" value="question">
+                  <input class="visuallyhidden" type="radio" id="question" name="program" value="question">
                   <label class="order__label order__label--radio" for="question">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Контактные данные<br>(владельца кота)</legend>
-            <ul class="order__list order__list--contact">
+          <fieldset class="order__fieldset order__fieldset--contact">
+            <legend class="order__legend">
+              <span class="order__legend-text">Контактные данные<br>(владельца кота)</span></legend>
+            <ul class="order__list order__list--contact"  role="none">
               <li class="order__item order__item--contact">
                 <label class="order__label" for="">E-mail:*</label>
                 <input type="email" placeholder="kuklachev@gmail.com"></li>
@@ -106,26 +107,30 @@
             </ul>
           </fieldset>
           <fieldset class="order__fieldset">
-            <legend class="order__legend">Комментарий</legend>
+            <legend class="order__legend">
+              <span class="order__legend-text">Комментарий</span>
+            </legend>
             <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="order__fieldset order__fieldset--additionally">
-            <legend class="order__legend">Дополнительно</legend>
-            <ul class="order__list ">
+            <legend class="order__legend">
+              <span class="order__legend-text">Дополнительно</span>
+            </legend>
+            <ul class="order__list" role="none">
               <li class="order__item order__item--checkbox">
-                <input type="checkbox" id="sugar" name="sugar" checked>
+                <input class="visuallyhidden" type="checkbox" id="sugar" name="sugar" checked="checked">
                 <label class="order__label order__label--checkbox" for="sugar">Сахарозаменитель</label>
               </li>
               <li class="order__item order__item--checkbox">
-                <input type="checkbox" id="water" name="water">
+                <input class="visuallyhidden" type="checkbox" id="water" name="water">
                 <label class="order__label order__label--checkbox" for="water">Питьевая вода</label>
               </li>
               <li class="order__item order__item--checkbox">
-                <input type="checkbox" id="milk" name="milk">
+                <input class="visuallyhidden" type="checkbox" id="milk" name="milk">
                 <label class="order__label order__label--checkbox" for="milk">Молоко</label>
               </li>
               <li class="order__item order__item--checkbox">
-                <input type="checkbox" id="vitamins" name="vitamins">
+                <input class="visuallyhidden" type="checkbox" id="vitamins" name="vitamins">
                 <label class="order__label order__label--checkbox" for="vitamins">Витамины</label>
               </li>
             </ul>
