@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -64,16 +65,16 @@
             <fieldset class="order__fieldset order__fieldset--info">
               <ul class="order__list" role="none">
                 <li class="order__item">
-                  <label class="order__label" for="">Имя:*</label>
-                  <input type="text" placeholder="Барсик">
+                  <label class="order__label" for="name">Имя:*</label>
+                  <input type="text" id="name" placeholder="Барсик">
                 </li>
                 <li class="order__item">
-                  <label class="order__label" for="">Вес (кг):*</label>
-                  <input type="text" placeholder="7">
+                  <label class="order__label" for="weight">Вес (кг):*</label>
+                  <input type="text" id="weight" placeholder="7">
                 </li>
                 <li class="order__item">
-                  <label class="order__label" for="">Возраст (лет):</label>
-                  <input type="text" placeholder="7">
+                  <label class="order__label" for="age">Возраст (лет):</label>
+                  <input type="text" id="age" placeholder="7">
                 </li>
               </ul>
             </fieldset>
@@ -99,11 +100,11 @@
               <span class="order__legend-text">Контактные данные<br>(владельца кота)</span></legend>
             <ul class="order__list order__list--contact"  role="none">
               <li class="order__item order__item--contact">
-                <label class="order__label" for="">E-mail:*</label>
-                <input type="email" placeholder="kuklachev@gmail.com"></li>
+                <label class="order__label" for="email">E-mail:*</label>
+                <input type="email" id="email" placeholder="kuklachev@gmail.com"></li>
               <li class="order__item order__item--contact">
-                <label class="order__label" for="">Телефон:*</label>
-                <input type="tel" placeholder="8 (960) 900-60-90"></li>
+                <label class="order__label" for="tel">Телефон:*</label>
+                <input type="tel" id="tel" placeholder="8 (960) 900-60-90"></li>
             </ul>
           </fieldset>
           <fieldset class="order__fieldset">
