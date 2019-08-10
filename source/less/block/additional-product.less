@@ -1,0 +1,141 @@
+.additional-product {
+  padding-bottom: 17px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-width: 0;
+    padding: 28px 38px;
+
+    &:last-child {
+      border-bottom-width: 1px;
+    }
+  }
+
+  @media @desktop-width {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.additional-product__title {
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(34, 34, 34);
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  @media @desktop-width {
+    min-width: 285px;
+    margin: 0;
+    padding-right: 40px;
+  }
+}
+
+.additional-product__value-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+  @media @tablet-width {
+    margin-top: 0;
+  }
+
+  @media @desktop-width {
+    min-width: 280px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.additional-product__quantity {
+  font-family: @second-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  color: @normal-color-font;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media @desktop-width {
+    text-align: left;
+    padding: 0;
+    padding-right: 40px;
+
+    margin: 0;
+  }
+}
+
+.additional-product__price {
+  font-family: @second-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: @normal-color-font;
+
+  @media @tablet-width {
+    min-width: 70px;
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media @desktop-width {
+    text-align: right;
+    padding: 0;
+    padding-right: 40px;
+    margin: 0;
+  }
+}
+
+.additional-product__link {
+  .btn();
+  width: 100%;
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 13px;
+
+  @media @tablet-width {
+    padding: 13px;
+    margin-top: 23px;
+  }
+
+  @media @desktop-width {
+    width: 245px;
+    margin: 0;
+    margin-left: auto;
+  }
+}

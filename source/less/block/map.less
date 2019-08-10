@@ -1,0 +1,25 @@
+.map {
+  @media @tablet-width {
+    //
+  }
+
+  @media @desktop-width {
+    position: relative;
+  }
+}
+
+.map__iframe {
+  height: 370px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media @tablet-width {
+    height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media @desktop-width {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+}

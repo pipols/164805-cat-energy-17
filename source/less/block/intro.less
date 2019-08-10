@@ -3,6 +3,17 @@
   margin-bottom: 22px;
   padding-top: 30px;
 
+  @media @tablet-width {
+    padding-top: 61px;
+  }
+
+  @media @desktop-width {
+    min-height: 550px;
+
+    margin-bottom: 80px;
+    padding-top: 113px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -15,17 +26,58 @@
     background-position-x: center;
     background-position-y: top;
     z-index: -1;
+
+    @media @tablet-width {
+      display: none;
+    }
   }
 }
 
 .intro__wrap {
   .container-mobile();
+
+  @media @tablet-width {
+    .container-tablet();
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  @media @desktop-width {
+    .container-desktop();
+    display: block;
+    padding-left: 193px;
+    padding-right: 193px;
+  }
+}
+
+.intro picture {
+  @media @tablet-width {
+    order: 4;
+  }
 }
 
 .intro__img {
+  width: 280px;
+  height: 270px;
   display: block;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
+
+  @media @tablet-width {
+    // order: 4;
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 0;
+    right: 320px;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+  }
 }
 
 .intro__title {
@@ -37,6 +89,21 @@
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
   margin-top: 0;
+
+  @media @tablet-width {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @title-color-font;
+    margin-bottom: 33px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  @media @desktop-width {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .intro__text {
@@ -49,13 +116,47 @@
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: rgb(17, 17, 17);
+    margin-bottom: 45px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .intro__link {
   .btn();
+  width: 100%;
+  padding: 14px 15px 11px;
   font-family: @main-font;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: rgb(255, 255, 255);
+
+  @media @tablet-width {
+    width: auto;
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 29px 15px 26px;
+    z-index: 1;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  @media @desktop-width {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
