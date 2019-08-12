@@ -34,6 +34,14 @@
   width: 191px;
   height: 39px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media @tablet-width {
     width: 174px;
     height: 59px;
@@ -48,7 +56,6 @@
 .main-navigation__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 
   @media @tablet-width {
@@ -57,8 +64,19 @@
 }
 
 .main-navigation__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   @media @tablet-width {
+    border: none;
     padding-left: 36px;
+
+    &:last-child {
+      border: none;
+    }
   }
 }
 
@@ -67,32 +85,47 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
-
   display: block;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  padding: 24px 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
   color: @title-color-font;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    color: rgba(@title-color-font, 0.6);
+  }
+
+  &:active {
+    color: rgba(@title-color-font, 0.3);
+  }
 
   @media @tablet-width {
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    padding-left: 0;
-    padding-right: 0;
-
+    padding: 10px 0;
     text-align: left;
-
     color: rgb(34, 34, 34);
     border: none;
+
+    &:hover {
+      color: rgba(34, 34, 34, 0.6);
+    }
+
+    &:active {
+      color: rgba(34, 34, 34, 0.3);
+    }
+
+    &--active {
+      border-bottom: 2px solid @main-color;
+      cursor: default;
+
+      &:hover,
+      &:active {
+        color: rgb(34, 34, 34);
+      }
+    }
   }
 
   @media @desktop-width {
@@ -100,12 +133,23 @@
 
     &--white {
       color: rgb(255, 255, 255);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      &.main-navigation__link--active {
+        border-bottom: 2px solid rgb(255, 255, 255);
+      }
     }
   }
 }
 
 .main-navigation__toggle {
   position: absolute;
-
   display: none;
 }

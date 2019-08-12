@@ -1,13 +1,15 @@
 .social {
   .container-mobile();
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media @tablet-width {
-    padding-top: 0;
-    padding-bottom: 0;
     border: none;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
   }
 
   @media @desktop-width {
@@ -29,7 +31,8 @@
   margin-right: 20px;
 
   @media @tablet-width {
-    //
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   @media @desktop-width {
@@ -48,6 +51,14 @@
 }
 
 .social__img {
+  &:hover {
+    fill: @main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--vk {
     width: 22px;
     height: 12px;

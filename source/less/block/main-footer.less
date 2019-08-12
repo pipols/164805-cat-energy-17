@@ -1,15 +1,20 @@
 .main-footer {
   background-color: @background-second-color;
+}
 
+.main-footer__wrap {
   @media @tablet-width {
+    .container-tablet();
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 52px;
     padding-bottom: 58px;
   }
 
   @media @desktop-width {
-    //
+    .container-desktop();
+    padding-top: 52px;
+    padding-bottom: 58px;
   }
 }

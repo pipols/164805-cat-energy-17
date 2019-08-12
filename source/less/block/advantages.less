@@ -3,6 +3,7 @@
 
   @media @tablet-width {
     padding-bottom: 0;
+    padding-top: 16px;
   }
 
   @media @desktop-width {
@@ -18,16 +19,17 @@
   line-height: 60px;
   color: @title-color-font;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 
   @media @tablet-width {
     .container-tablet();
     font-size: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 41px;
   }
 
   @media @desktop-width {
     .container-desktop();
+    margin-bottom: 40px;
   }
 }
 
@@ -59,7 +61,6 @@
   text-align: left;
   color: @normal-color-font;
   padding-left: 80px;
-  padding-top: 6px;
   padding-bottom: 6px;
   margin-bottom: 20px;
 
@@ -103,10 +104,10 @@
   @media @tablet-width {
     width: 244px;
     min-height: 281px;
-    padding-top: 148px;
+    padding-top: 143px;
     padding-left: 0;
     margin-right: 80px;
-    margin-bottom: 58px;
+    margin-bottom: 36px;
     font-size: 16px;
     line-height: 24px;
 
@@ -118,8 +119,8 @@
 
     &::after {
       position: absolute;
-      top: -5px;
-      left: 126px;
+      top: -8px;
+      left: 119px;
       font-family: @main-font;
       font-size: 281px;
       line-height: 281px;
@@ -132,6 +133,8 @@
   }
 
   @media @desktop-width {
+    margin-bottom: 5px;
+
     &:last-child {
       margin-right: 0;
     }

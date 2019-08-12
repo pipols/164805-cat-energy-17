@@ -23,23 +23,22 @@
 
 .course__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 22px;
   background-color: @background-second-color;
 
   @media @tablet-width {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
     min-height: 372px;
     margin-bottom: 30px;
-    padding: 80px 285px 60px 55px;
+    padding: 77px 280px 60px 53px;
   }
 
   @media @desktop-width {
     width: 570px;
-    margin-bottom: 80px;
+    margin-bottom: 58px;
     padding: 47px 50px 60px;
   }
 }
@@ -51,7 +50,7 @@
   line-height: 37px;
   margin-top: 5px;
   margin-bottom: 12px;
-  padding-left: 92px;
+  padding-left: 70px;
   text-transform: uppercase;
   color: @title-color-font;
 
@@ -65,7 +64,7 @@
 
   @media @desktop-width {
     margin-bottom: 45px;
-    padding-top: 34px;
+    padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 164px;
   }
@@ -110,7 +109,7 @@
   }
 
   @media @tablet-width {
-    top: 92px;
+    top: 93px;
     right: 62px;
     left: auto;
     width: 200px;
@@ -169,7 +168,7 @@
   font-family: @second-font;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 24px;
+  margin-top: 30px;
   padding-bottom: 24px;
   color: @normal-color-font;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -178,13 +177,13 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     padding-bottom: 0;
     border: none;
   }
 
   @media @desktop-width {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -208,13 +207,33 @@
     background-image: url("../img/icon-right-arrow-long.svg");
   }
 
+  &:hover {
+    &::before {
+      width: 34px;
+      height: 12px;
+      right: -46px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
     align-self: flex-start;
+    margin-top: auto;
 
     &::before {
       right: -49px;
+    }
+
+    &:hover {
+      &::before {
+        right: -58px;
+      }
     }
   }
 }

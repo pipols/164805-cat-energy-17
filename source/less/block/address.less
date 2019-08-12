@@ -1,7 +1,11 @@
 .address {
+  &--bg {
+    background-color: @background-second-color;
+  }
+
   @media @desktop-width {
     position: absolute;
-    top: 95px;
+    top: 92px;
     left: 110px;
     background-color: rgb(255, 255, 255);
   }
@@ -15,13 +19,13 @@
 
   @media @tablet-width {
     .container-tablet();
-    padding: 53px 70px 46px;
+    padding: 65px 70px 36px;
     justify-content: space-between;
   }
 
   @media @desktop-width {
     width: 570px;
-    padding: 65px 85px 60px 75px;
+    padding: 65px 85px 36px 75px;
   }
 }
 
@@ -31,6 +35,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   text-align: left;
   color: @title-color-font;
   margin-top: 0;
