@@ -34,16 +34,16 @@
     </svg>
     <header class="main-header main-header--bg">
       <nav class="main-navigation">
-        <a href="#" class="main-navigation__logo-link">
+        <a class="main-navigation__logo-link">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-navigation__logo" src="img/logo-mobile.svg" alt="Пример">
+            <img class="main-navigation__logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи">
           </picture>
         </a>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--white">Главная</a>
+            <a class="main-navigation__link main-navigation__link--white main-navigation__link--active">Главная</a>
           </li>
           <li class="main-navigation__item">
             <a href="catalog.html" class="main-navigation__link main-navigation__link--white">Каталог продукции</a>
@@ -64,7 +64,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img src="img/index-can-mobile@1x.png" alt="" class="intro__img" width="280" height="270">
+            <img src="img/index-can-mobile@1x.png" alt="Функциональное питание для котов" class="intro__img" width="280" height="270">
           </picture>
           <a class="intro__link btn" href="form.html">Подобрать программу</a>
         </div>
@@ -76,13 +76,13 @@
             <h2 class="course__title">Похудение</h2>
             <div class="course__img course__img--slim"></div>
             <p class="course__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="" class="course__link">Каталог Slim</a>
+            <a href="catalog.html" class="course__link">Каталог Slim</a>
           </li>
           <li class="course__item">
             <h2 class="course__title">Набор Массы</h2>
             <div class="course__img course__img--pro"></div>
             <p class="course__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="" class="course__link">Каталог Pro</a>
+            <a href="catalog.html" class="course__link">Каталог Pro</a>
           </li>
         </ul>
       </section>
@@ -127,12 +127,12 @@
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                  <img class="slider__img slider__img-before" src="img/before-mobile@1x.png" width="311" height="232" alt="">
+                  <img class="slider__img slider__img-before" src="img/before-mobile@1x.png" width="311" height="232" alt="толстый кот">
                 </picture>
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                  <img class="slider__img slider__img-after" src="img/after-mobile@1x.png" width="311" height="232" alt="">
+                  <img class="slider__img slider__img-after" src="img/after-mobile@1x.png" width="311" height="232" alt="худой кот">
                 </picture>
               </div>
               <div class="slider__control">
@@ -157,50 +157,56 @@
             </div>
           </div>
         </div>
-        <div class="map__iframe"></div>
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6059712664617!2d30.32335249758153!3d59.93868024400064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1562397883359!5m2!1sru!2sby"
+          style="border:0"
+          allowfullscreen="allowfullscreen"></iframe>
       </section>
 
     </main>
     <footer class="main-footer">
-      <div class="footer-logo">
-        <a href="#" class="footer-logo__link">
-          <svg class="footer-logo__img" width="128" height="24">
-            <use xlink:href="#logo-footer"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <svg class="social__img social__img--vk" width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <svg class="social__img social__img--insta" width="17" height="17">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <svg class="social__img social__img--fb" width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <svg class="copyright__img" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
+      <div class="main-footer__wrap">
+        <div class="footer-logo">
+          <a href="#" class="footer-logo__link">
+            <svg class="footer-logo__img" width="128" height="24">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__img social__img--vk" width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__img social__img--insta" width="17" height="17">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__img social__img--fb" width="10" height="19">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <span>HTML Academy</span>
+            <svg class="copyright__img" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

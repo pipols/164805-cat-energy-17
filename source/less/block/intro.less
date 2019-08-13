@@ -1,17 +1,18 @@
 .intro {
   position: relative;
-  margin-bottom: 22px;
-  padding-top: 30px;
+  margin-bottom: 25px;
+  padding-top: 27px;
 
   @media @tablet-width {
-    padding-top: 61px;
+    padding-top: 51px;
+    margin-bottom: 0;
   }
 
   @media @desktop-width {
     min-height: 550px;
 
-    margin-bottom: 80px;
-    padding-top: 113px;
+    margin-bottom: 4px;
+    padding-top: 104px;
   }
 
   &::before {
@@ -73,7 +74,7 @@
   @media @desktop-width {
     position: absolute;
     top: 0;
-    right: 320px;
+    right: 327px;
     width: 552px;
     height: 499px;
     z-index: -1;
@@ -87,7 +88,7 @@
   font-weight: 400;
   text-align: center;
   color: rgb(255, 255, 255);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   margin-top: 0;
 
   @media @tablet-width {
@@ -95,14 +96,15 @@
     line-height: 60px;
     text-align: left;
     color: @title-color-font;
-    margin-bottom: 33px;
+    margin-bottom: 22px;
     padding-left: 90px;
     padding-right: 90px;
   }
 
   @media @desktop-width {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 45px;
   }
 }
 
@@ -122,15 +124,15 @@
     line-height: 20px;
     text-align: left;
     color: rgb(17, 17, 17);
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     padding-left: 90px;
     padding-right: 90px;
   }
 
   @media @desktop-width {
     margin-bottom: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -144,6 +146,15 @@
   text-align: center;
   color: rgb(255, 255, 255);
 
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media @tablet-width {
     width: auto;
     align-self: flex-start;
@@ -156,7 +167,7 @@
   }
 
   @media @desktop-width {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

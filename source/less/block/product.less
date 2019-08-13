@@ -1,8 +1,10 @@
 .product {
-  margin-top: -1px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
   @media @tablet-width {
     display: flex;
@@ -10,18 +12,15 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 324px;
-    min-height: 431px;
-    padding-right: 37px;
+    min-height: 513px;
     padding-bottom: 40px;
-    padding-left: 37px;
-    background-color: @background-second-color;
     border: none;
-    margin-top: 140px;
+    margin-bottom: 58px;
+    background-image: linear-gradient(rgb(255, 255, 255) 82px, @background-second-color 82px);
   }
 
   @media @desktop-width {
     width: 245px;
-    margin-top: 80px;
   }
 }
 
@@ -43,18 +42,16 @@
   width: 50%;
 
   @media @tablet-width {
+    display: block;
     width: auto;
-  }
-
-  @media @desktop-width {
-    margin-top: -60px;
-    margin-bottom: 39px;
   }
 }
 
 .product__img {
+  display: block;
+
   @media @tablet-width {
-    margin-top: -60px;
+    margin-bottom: 37px;
   }
 }
 
@@ -63,6 +60,9 @@
 
   @media @tablet-width {
     width: 100%;
+    box-sizing: border-box;
+    padding-right: 37px;
+    padding-left: 37px;
   }
 }
 
@@ -77,7 +77,8 @@
   line-height: 20px;
   width: 80px;
   margin-top: 0;
-  padding-top: 25px;
+  margin-bottom: 9px;
+  padding-top: 22px;
   text-align: left;
   text-transform: uppercase;
   color: @title-color-font;
@@ -85,8 +86,9 @@
   @media @tablet-width {
     font-size: 20px;
     width: 130px;
-    margin: 0 auto 25px;
+    margin: 0 auto 22px;
     text-align: center;
+    padding-top: 0;
   }
 }
 
@@ -108,29 +110,29 @@
 .product__properties {
   font-family: @second-font;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   text-align: left;
   color: @normal-color-font;
 
   @media @tablet-width {
     font-size: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
 .product__value {
   font-family: @second-font;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   text-align: right;
   color: @normal-color-font;
 
   @media @tablet-width {
     font-size: 16px;
     line-height: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
@@ -139,12 +141,26 @@
   font-size: 16px;
   line-height: 20px;
   width: 100%;
-  padding: 13px;
+  padding: 10px;
   text-align: center;
   color: rgb(255, 255, 255);
   .btn();
 
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media @tablet-width {
     margin-top: auto;
+    width: 249px;
+  }
+
+  @media @desktop-width {
+    width: 169px;
   }
 }

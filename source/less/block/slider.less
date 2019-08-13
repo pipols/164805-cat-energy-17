@@ -2,9 +2,9 @@
   text-align: center;
 
   @media @tablet-width {
-    margin-top: 245px;
-    background-color: @background-second-color;
-    padding-bottom: 67px;
+    margin-top: 45px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(rgb(255, 255, 255) 170px, @background-second-color 170px);
   }
 
   @media @desktop-width {
@@ -12,6 +12,7 @@
     margin-top: 0;
     background-color: inherit;
     padding-bottom: 0;
+    background-image: none;
   }
 }
 
@@ -24,7 +25,7 @@
   }
 
   @media @desktop-width {
-    width: auto;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -32,9 +33,8 @@
 
 .slider__img-wrap {
   @media @tablet-width {
-    margin-top: -130px;
     height: 520px;
-    width: 100%;
+    width: 690px;
     position: relative;
   }
 
@@ -53,25 +53,25 @@
     width: 690px;
     height: 517px;
   }
+
+  @media @desktop-width {
+    max-width: none;
+    left: 20px;
+  }
 }
 
 .slider__img-before {
   @media @tablet-width {
-    clip: rect(auto, 352px, auto, 0);
-  }
-
-  @media @desktop-width {
-    //
+    clip: rect(auto, 365px, auto, 0);
   }
 }
 
 .slider__img-after {
-  @media @tablet-width {
-    clip: rect(auto, auto, auto, 352px);
-  }
+  display: none;
 
-  @media @desktop-width {
-    //
+  @media @tablet-width {
+    display: block;
+    clip: rect(auto, auto, auto, 365px);
   }
 }
 
@@ -80,10 +80,16 @@
   justify-content: center;
   align-items: center;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 
   @media @tablet-width {
-    //
+    width: 575px;
+    padding-top: 15px;
+  }
+
+  @media @desktop-width {
+    align-self: flex-end;
+    padding-top: 38px;
   }
 }
 
@@ -101,6 +107,14 @@
     font-size: 20px;
     border-bottom: 1px dotted rgb(205, 205, 205);
     padding-bottom: 5px;
+
+    &:hover {
+      border-bottom: 1px solid rgb(205, 205, 205);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -120,7 +134,7 @@
   @media @tablet-width {
     display: flex;
     align-items: baseline;
-    width: 428px;
+    width: 100%;
     height: 6px;
     border-radius: 2.5px;
     background-color: rgb(220, 220, 220);
@@ -139,11 +153,19 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgb(205, 205, 205);
     border: solid 13px rgb(255, 255, 255);
     position: relative;
     top: -15px;
-    left: 190px;
+    left: 183px;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgb(205, 205, 205);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px rgb(104, 183, 56);
+    }
   }
 }
