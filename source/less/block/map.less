@@ -15,12 +15,24 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
   @media @tablet-width {
     height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
   }
 
   @media @desktop-width {
     background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
