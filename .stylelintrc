@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-htmlacademy",
-
+  "ignoreFiles": "*.svg",
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
