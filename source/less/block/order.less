@@ -442,6 +442,15 @@ input[type="checkbox"]:checked + .order__label--checkbox::after {
   }
 }
 
+.order input[type="number"] {
+  appearance: textfield;
+
+  &:hover,
+  &:focus {
+    appearance: number-input;
+  }
+}
+
 .order__item svg {
   position: absolute;
   right: 15px;
