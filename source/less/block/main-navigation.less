@@ -55,9 +55,14 @@
 }
 
 .main-navigation__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--nojs {
+    display: block;
+  }
 
   @media @tablet-width {
     display: flex;
@@ -122,8 +127,8 @@
       border-bottom: 2px solid @main-color;
       cursor: default;
 
-      &:hover,
-      &:active {
+      &:active,
+      &:hover {
         color: rgb(34, 34, 34);
       }
     }
@@ -151,26 +156,22 @@
 }
 
 .main-navigation__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   border: none;
   background: transparent;
-  top: 20px;
-  right: 40px;
-
-  &--no-js {
-    display: none;
-  }
+  top: 12px;
+  right: 12px;
+  padding: 20px;
 
   @media @tablet-width {
     display: none;
   }
 }
 
-.main-navigation__toggle-close {
-  position: absolute;
-  left: 9px;
-}
-
+.main-navigation__toggle-close,
 .main-navigation__toggle-open {
   position: absolute;
 }
