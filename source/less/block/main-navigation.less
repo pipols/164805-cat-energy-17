@@ -1,4 +1,6 @@
 .main-navigation {
+  position: relative;
+
   @media @tablet-width {
     .container-tablet();
     display: flex;
@@ -150,5 +152,25 @@
 
 .main-navigation__toggle {
   position: absolute;
-  display: none;
+  border: none;
+  background: transparent;
+  top: 20px;
+  right: 40px;
+
+  &--no-js {
+    display: none;
+  }
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.main-navigation__toggle-close {
+  position: absolute;
+  left: 9px;
+}
+
+.main-navigation__toggle-open {
+  position: absolute;
 }
