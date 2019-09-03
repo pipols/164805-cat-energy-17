@@ -10,7 +10,6 @@
 
   @media @desktop-width {
     min-height: 550px;
-
     margin-bottom: 4px;
     padding-top: 104px;
   }
@@ -23,10 +22,15 @@
     height: 306px;
     background-color: rgb(99, 167, 58);
     background-image: url("../img/index-background-mobile@1x.jpg");
+    background-size: 320px auto;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
     z-index: -1;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
 
     @media @tablet-width {
       display: none;
@@ -65,7 +69,6 @@
   margin: 30px auto 0;
 
   @media @tablet-width {
-    // order: 4;
     width: 709px;
     height: 609px;
     margin-top: -80px;

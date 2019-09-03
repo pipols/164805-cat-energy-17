@@ -52,6 +52,7 @@
     display: block;
     width: 690px;
     height: 517px;
+    left: 8px;
   }
 
   @media @desktop-width {
@@ -62,6 +63,10 @@
 
 .slider__img-before {
   @media @tablet-width {
+    clip: rect(auto, 337px, auto, 0);
+  }
+
+  @media @desktop-width {
     clip: rect(auto, 365px, auto, 0);
   }
 }
@@ -71,6 +76,10 @@
 
   @media @tablet-width {
     display: block;
+    clip: rect(auto, auto, auto, 337px);
+  }
+
+  @media @desktop-width {
     clip: rect(auto, auto, auto, 365px);
   }
 }

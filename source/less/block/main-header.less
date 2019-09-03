@@ -1,21 +1,28 @@
 .main-header {
   @media @desktop-width {
-    .container-desktop();
+    width: auto;
+    padding: 0;
+    margin: 0;
     position: relative;
 
     &--bg {
       &::after {
         position: absolute;
         content: "";
-        width: 720px;
         height: 696px;
         top: 0;
         right: 0;
-        background-color: @main-color;
+        left: 50%;
+        background-color: #65a93c;
         background-image: url("../img/index-background-desktop@1x.jpg");
         background-repeat: no-repeat;
-        background-size: 720px 696px;
+        background-position: top right;
+        background-size: 720px auto;
         z-index: -1;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
       }
     }
   }

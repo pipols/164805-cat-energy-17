@@ -20,12 +20,12 @@
   justify-content: space-between;
   width: 100%;
 
-  &:hover {
-    fill: @main-color;
-  }
-
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover .copyright__img {
+    fill: @main-color;
   }
 
   font-family: @second-font;
@@ -42,5 +42,10 @@
 }
 
 .copyright__img {
+  fill: rgb(102, 102, 102);
   padding-left: 23px;
+
+  &:hover {
+    fill: @main-color;
+  }
 }
