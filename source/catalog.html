@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
@@ -63,7 +65,7 @@
     </svg>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-navigation__logo-link">
+        <a href="index.html" class="main-navigation__logo-link" aria-label="на главную страницу">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -82,6 +84,7 @@
           </li>
         </ul>
         <button class="main-navigation__toggle hidden" type="button">
+          Кнопка открытия или закрытия меню
           <svg class="main-navigation__toggle-close" width="18" height="18">
             <use xlink:href="#icon-close"></use>
           </svg>
@@ -422,7 +425,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrap">
         <div class="footer-logo">
-          <a href="#" class="footer-logo__link">
+          <a href="#" class="footer-logo__link" aria-label="на главную страницу">
             <svg class="footer-logo__img" width="128" height="24">
               <use xlink:href="#logo-footer"></use>
             </svg>
@@ -431,21 +434,21 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="Ссылка на нашу группу в вконтакте">
                 <svg class="social__img social__img--vk" width="22" height="12">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="Ссылка на наш инстаграм">
                 <svg class="social__img social__img--insta" width="17" height="17">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="Ссылка на нашу группу в фейсбук">
                 <svg class="social__img social__img--fb" width="10" height="19">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
@@ -454,7 +457,7 @@
           </ul>
         </div>
         <div class="copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Переход на сайт HTML Academy">
             <span>HTML Academy</span>
             <svg class="copyright__img" width="27" height="34">
               <use xlink:href="#htmlacademy"></use>
